@@ -1,0 +1,229 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdnjs.com/libraries/remixicon" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/sweetalert2/dist/sweetalert2.all.min.js"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
+    <div class="loader" id="load"></div>
+    <div id="content">
+      <!------------ start header----------->
+      <header>
+        <nav
+          class="navbar fixed-top gray-bg navbar-expand-lg bg-body-tertiary"
+          id="navbar-example2"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <h1>Yummy <span style="color: #ce1212">.</span></h1>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-edit">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="#scrollspyHeading1"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading3">Menu</a>
+                </li>
+              </ul>
+              <div class="wrapper side-panel-open">
+                <button class="cart-btn" data-target="#popUp1">
+                  My Cart <i class="ri-shopping-cart-2-fill"></i>
+                </button>
+              </div>
+              <div id="counterDisplay">
+                <span>0</span>
+              </div>
+              <div class="pop-up" id="popUp1">
+                <div class="side-panal inner">
+                  <p id="close"><i class="ri-close-fill"></i></p>
+                  <div id="empty">
+                    <div class="flex"></div>
+                    <div class="empty-cart">
+                      <p>the cart is empty</p>
+                    </div>
+                  </div>
+
+                  <div class="container">
+                    <div id="cart" class=""></div>
+                    <span id="cart-count"></span>
+                  </div>
+                  <div id="cartinfo">
+                    <div class="container">
+                      <div class="d-flex justify-content-between total">
+                        <div><button id="totalcount"></button></div>
+                        <div>
+                          <button id="totalprice"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!------------ end header----------->
+      <!-------start Home section-------->
+      <section class="gray-bg mt-5" id="#scrollspyHeading1">
+        <div class="container">
+          <div class="row justify-content-between home-padding">
+            <div class="col-lg-5 txt-padding wow">
+              <h2 class="animate__fadeInUp dur">
+                Enjoy Your Healthy<br />
+                Delicious Food
+              </h2>
+              <p class="animate__slideInUp dur">
+                Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+                eveniet. Eum quas beatae cumque eum quaerat.
+              </p>
+              <button class="animate__slideInUp dur navbar-text navbar-btn">
+                Book a table
+              </button>
+            </div>
+            <div class="col-lg-4">
+              <img
+                class="animate__slideInDown dur"
+                src="img/hero-img.png"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------end Home section-------->
+      <section class="img-bg mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 text-center">
+              <h2 id="clients">255</h2>
+              <p>clients</p>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <h2 id="projects">523</h2>
+              <p>projects</p>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center">
+              <h2 id="clients">1453</h2>
+              <p>hour of support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------start products section-------->
+      <!-------end products section-------->
+
+      <!-------start menue section-------->
+      <section class="my-5 containe gray-bgr" id="scrollspyHeading3">
+        <div class="text-center">
+          <h3 style="color: #7f7f90">our menu</h3>
+          <h2>CHECK OUR <span style="color: #ce1212">OUR MENU</span></h2>
+        </div>
+        <ul class="d-flex justify-content-center tabs">
+          <li class="p-2 m-2 active" data-cont=".one">Starters</li>
+          <li class="p-2 m-2" data-cont=".two">Breakfast</li>
+          <li class="p-2 m-2" data-cont=".three">Lunch</li>
+          <div class="line"></div>
+        </ul>
+
+        <div class="me-auto content2 overflow-hidden" style="width: 100%">
+          <div
+            class="one animate__fadeInLeft wow container"
+            data-wow-duration="2s"
+          >
+            <h3 class="text-center" style="color: #7f7f90">menu</h3>
+            <h3 class="text-center" style="color: #ce1212">Starters</h3>
+            <div
+              class="row mt-2 justify-content-between"
+              id="product-list"
+            ></div>
+          </div>
+          <div
+            class="two animate__fadeInLeft wow container"
+            data-wow-duration="2s"
+          >
+            <h3 class="text-center" style="color: #7f7f90">menu</h3>
+            <h3 class="text-center" style="color: #ce1212">Breakfast</h3>
+            <div
+              class="row mt-2 justify-content-between"
+              id="product-list1"
+            ></div>
+          </div>
+          <div
+            class="three animate__fadeInLeft wow container"
+            data-wow-duration="2s"
+          >
+            <h3 class="text-center" style="color: #7f7f90">menu</h3>
+            <h3 class="text-center" style="color: #ce1212">Lunch</h3>
+            <div
+              class="row mt-2 justify-content-between"
+              id="product-list2"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-------end about section-------->
+      <!-------start footer-------->
+      <footer class="footer-bg text-center">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+          <p>© 2023 Copyright: Yummy .</p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!----------------------------- end footer ------------------------>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
