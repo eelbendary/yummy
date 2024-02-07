@@ -23,6 +23,10 @@
     }
         .img-bg {
            height: 423px ;}
+    .loader{
+        top: 46%;
+        left: 36%;
+    }
 }
 @media only screen and (min-width: 700px)  {
     #counterDisplay {
@@ -49,6 +53,10 @@
         margin-left: 31%;}
     .img-bg {
         height: 423px;}
+    .loader {
+        top: 46%;
+        left: 42%;
+    }
 }
 @media only screen and (min-width: 998px) {
     .container .navbar-edit{
@@ -76,9 +84,15 @@
     .tabs {    
         width: 16%;
         margin-left: 41%;}
-
+    .loader{
+        top: 48%;
+        left: 44%;
+    }
 }
-
+#cart{
+    width:94%;
+    overflow-x: hidden;
+}
 .loader {
     border: 16px solid #f3f3f3; 
     border-top: 16px solid #ce1212; 
@@ -87,8 +101,7 @@
     height: 120px;
     animation: spin 2s linear infinite;
     position: relative;
-    top: 48%;
-    left: 44%;
+    
   }
   
   @keyframes spin {
@@ -127,6 +140,7 @@
 #cartinfo{
     height: 85px;
     background-color: #ce1212;
+
 }
 .mt-9{
     margin-top: 5rem;

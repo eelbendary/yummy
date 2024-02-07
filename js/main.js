@@ -2,7 +2,7 @@
 setTimeout(() => {
   document.getElementById("load").style.display = "none";
   document.getElementById("content").style.display = "block";
-}, 2000);
+}, 3000);
 //hande pop up
 let popupBtn = document.querySelector(".wrapper button");
 let displayAllCount = document.getElementById("counterDisplay");
@@ -219,10 +219,10 @@ function showcartitems() {
         cart.innerHTML =
           cart.innerHTML +
           `<div class="d-flex btmbord ">
-        <div style="width :40%;">
+        <div style="width :37%;">
           <img src="${x[0].img_url}" style="width :80%;">
         </div>
-        <div style="width :50%;">
+        <div style="width :62%;">
           <h2>${x[0].plate_name}</h2>
           <p>${x[0].decription}</p>
 
@@ -231,7 +231,7 @@ function showcartitems() {
               <h2 style="color: #ce1212;">${x[0].price}</h2>
             </div>
             <div class="d-flex justify-content-between">
-                <div class="dec text-center mx-2">
+                <div class="dec text-center mx-1">
                     <button onclick=counter1('dec',${
                       x[0].id
                     }) class="counters-btn" id="dec-btn"><i class="ri-subtract-line"></i></button>
@@ -239,12 +239,12 @@ function showcartitems() {
                 <div class="display px-1">
                ${displaycounter(x[0].id)}
                 </div>
-                <div class="inc text-center mx-2 ">
+                <div class="inc text-center mx-1 ">
                     <button  onclick=counter1('inc',${
                       x[0].id
                     }) class="counters-btn" id="inc-btn"><i class="ri-add-fill"></i></button>
                 </div>
-                <div class="inc text-center mx-2 ">
+                <div class="inc text-center mx-1 ">
                     <button  onclick=deleteFromCart(${
                       x[0].id
                     }) class="counters-btn"><i class="ri-delete-bin-2-line"></i></button>
